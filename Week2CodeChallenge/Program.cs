@@ -85,23 +85,23 @@ namespace Week2CodeChallenge
         }
         //declare function called TextStats with parameter called input
         static void TextStats(string input)
-        { 
+        {
             //set variables to 0
-            int numChars = input.Length -1;
+            int numChars = input.Length - 1;
             int numWords = 0;
             int numVowels = 0;
             int numCons = 0;
             int numSpecial = 0;
             int longest = 0;
             int shortest = 0;
-            
+
 
             //begin for loop to run through the string to count the given variables
-            for (var i = 0; i <= input.Length -1; i++)
+            for (var i = 0; i <= input.Length - 1; i++)
             {
 
                 var currentVowels = input[i];
-                var currentSpecial = input[i];
+                //counting how many vowels in the loop
                 if (currentVowels == 'a' || currentVowels == 'e' || currentVowels == 'i' || currentVowels == 'o' || currentVowels == 'u')
                 {
                     numVowels += 1;
